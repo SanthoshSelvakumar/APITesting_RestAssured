@@ -1,0 +1,219 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-01-24T16:27:54.009Z",
+        "line": 11,
+        "name": "verification of addPlaceAPI with for successful place addition",
+        "description": "",
+        "id": "validating-place-api;verification-of-addplaceapi-with-for-successful-place-addition;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2368760300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user should have a addPlaceAPI details \"ASDFGH\" \"Portugal\" \"Sports\" \"Accessories\" 10.67778 67.78889 and key for authentication",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ASDFGH\"",
+                  "offset": 39
+                },
+                {
+                  "val": "\"Portugal\"",
+                  "offset": 48
+                },
+                {
+                  "val": "\"Sports\"",
+                  "offset": 59
+                },
+                {
+                  "val": "\"Accessories\"",
+                  "offset": 68
+                },
+                {
+                  "val": "10.67778",
+                  "offset": 82
+                },
+                {
+                  "val": "67.78889",
+                  "offset": 91
+                }
+              ],
+              "location": "stepDefinitions.AddPlaceStepDefinition.user_should_have_a_add_place_api_details_and_key_for_authentication(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Double,java.lang.Double)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2631712100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the \"addPlaceAPI\" request is sent through \"POST\" method",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"addPlaceAPI\"",
+                  "offset": 4
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 42
+                }
+              ],
+              "location": "stepDefinitions.AddPlaceStepDefinition.the_request_is_sent_through_method(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3745900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the response should give 200 response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 25
+                }
+              ],
+              "location": "stepDefinitions.AddPlaceStepDefinition.the_response_should_give_response(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 761783800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "read the placeid value",
+            "match": {
+              "location": "stepDefinitions.AddPlaceStepDefinition.read_the_placeid_value()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2039726100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Verify the \"ASDFGH\" through \"GET\" method",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ASDFGH\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"GET\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinitions.AddPlaceStepDefinition.verify_the_through_method(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@addplaceAPI"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-24T16:28:01.957Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.stub()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "verification of delete place API",
+        "description": "",
+        "id": "validating-place-api;verification-of-delete-place-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4564200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user should have deleteplaceAPI request",
+            "match": {
+              "location": "stepDefinitions.AddPlaceStepDefinition.user_should_have_deleteplaceAPI_request()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2386997600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the \"deletePlaceAPI\" request is sent through \"DELETE\" method",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"deletePlaceAPI\"",
+                  "offset": 4
+                },
+                {
+                  "val": "\"DELETE\"",
+                  "offset": 45
+                }
+              ],
+              "location": "stepDefinitions.AddPlaceStepDefinition.the_request_is_sent_through_method(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2243600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the response should give 200 response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 25
+                }
+              ],
+              "location": "stepDefinitions.AddPlaceStepDefinition.the_response_should_give_response(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@deleteplaceAPI"
+          }
+        ]
+      }
+    ],
+    "name": "validating place API",
+    "description": "",
+    "id": "validating-place-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/placeValidations.feature",
+    "tags": []
+  }
+]
